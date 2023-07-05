@@ -1,0 +1,356 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Api/Agenda.Api.csproj": {}
+  },
+  "projects": {
+    "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Api/Agenda.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Api/Agenda.Api.csproj",
+        "projectName": "Agenda.Api",
+        "projectPath": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Api/Agenda.Api.csproj",
+        "packagesPath": "/Users/guilherme.mendonca/.nuget/packages/",
+        "outputPath": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/guilherme.mendonca/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Domain/Agenda.Domain.csproj": {
+                "projectPath": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Domain/Agenda.Domain.csproj"
+              },
+              "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Infra.IoC/Agenda.Infra.IoC.csproj": {
+                "projectPath": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Infra.IoC/Agenda.Infra.IoC.csproj"
+              },
+              "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Infra/Agenda.Infra.csproj": {
+                "projectPath": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Infra/Agenda.Infra.csproj"
+              },
+              "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Shared/Agenda.Shared.csproj": {
+                "projectPath": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Shared/Agenda.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Domain/Agenda.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Domain/Agenda.Domain.csproj",
+        "projectName": "Agenda.Domain",
+        "projectPath": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Domain/Agenda.Domain.csproj",
+        "packagesPath": "/Users/guilherme.mendonca/.nuget/packages/",
+        "outputPath": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/guilherme.mendonca/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Shared/Agenda.Shared.csproj": {
+                "projectPath": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Shared/Agenda.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Infra.IoC/Agenda.Infra.IoC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Infra.IoC/Agenda.Infra.IoC.csproj",
+        "projectName": "Agenda.Infra.IoC",
+        "projectPath": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Infra.IoC/Agenda.Infra.IoC.csproj",
+        "packagesPath": "/Users/guilherme.mendonca/.nuget/packages/",
+        "outputPath": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Infra.IoC/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/guilherme.mendonca/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Domain/Agenda.Domain.csproj": {
+                "projectPath": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Domain/Agenda.Domain.csproj"
+              },
+              "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Infra/Agenda.Infra.csproj": {
+                "projectPath": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Infra/Agenda.Infra.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.OpenApi": {
+              "target": "Package",
+              "version": "[1.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Infra/Agenda.Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Infra/Agenda.Infra.csproj",
+        "projectName": "Agenda.Infra",
+        "projectPath": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Infra/Agenda.Infra.csproj",
+        "packagesPath": "/Users/guilherme.mendonca/.nuget/packages/",
+        "outputPath": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Infra/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/guilherme.mendonca/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Domain/Agenda.Domain.csproj": {
+                "projectPath": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Domain/Agenda.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Shared/Agenda.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Shared/Agenda.Shared.csproj",
+        "projectName": "Agenda.Shared",
+        "projectPath": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Shared/Agenda.Shared.csproj",
+        "packagesPath": "/Users/guilherme.mendonca/.nuget/packages/",
+        "outputPath": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Shared/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/guilherme.mendonca/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Flunt": {
+              "target": "Package",
+              "version": "[2.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

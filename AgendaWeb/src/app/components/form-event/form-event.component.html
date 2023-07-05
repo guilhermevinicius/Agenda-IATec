@@ -1,0 +1,39 @@
+<div class="p-4">
+  <h2 class="text-center">{{data.eventId ? 'Editar Evento': 'Novo Evento'}}</h2>
+  <form [formGroup]="eventForm">
+    <mat-form-field class="w-full">
+      <mat-label>Name</mat-label>
+      <input formControlName="name" type="text" matInput>
+    </mat-form-field>
+
+    <mat-form-field class="w-full">
+      <mat-label>Descrição</mat-label>
+      <input formControlName="description" type="text" matInput>
+    </mat-form-field>
+
+    <mat-form-field class="w-full">
+      <mat-label>Data</mat-label>
+      <input formControlName="date" matInput [matDatepicker]="picker">
+      <mat-hint>MM/DD/YYYY hh:mm</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field class="w-full">
+      <mat-label>Local</mat-label>
+      <input formControlName="local" type="text" matInput>
+    </mat-form-field>
+
+    <mat-form-field class="w-full">
+      <mat-label>Tipo de evento</mat-label>
+      <mat-select formControlName="type" matNativeControl required>
+        <mat-option [value]="1">Exclusivo</mat-option>
+        <mat-option [value]="2">Compartilhado</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <button [disabled]="!eventForm.valid" mat-flat-button color="primary" class="w-full" (click)="submitForm()">
+      {{data.eventId ? 'Editar': 'Criar'}}
+    </button>
+  </form>
+</div>

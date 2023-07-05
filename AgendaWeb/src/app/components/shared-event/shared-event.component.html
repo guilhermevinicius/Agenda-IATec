@@ -1,0 +1,18 @@
+<div class="p-4">
+  <div class="text-center">
+    <h2>Compatilhar evento</h2>
+    <p class="text-sm text-gray-500">Selecione o usuario que você deseja comportilhar esse evento</p>
+  </div>
+
+  <form [formGroup]="sharedEventForm">
+    <mat-form-field class="w-full">
+      <mat-label>Usuarios</mat-label>
+      <mat-select formControlName="userId" matNativeControl required>
+        <mat-option *ngFor="let user of users" [value]="user.id">{{ user.name }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <button class="w-full" [disabled]="!sharedEventForm.valid" mat-flat-button color="primary" (click)="submitForm()">Compartilhar</button>
+  </form>
+
+</div>

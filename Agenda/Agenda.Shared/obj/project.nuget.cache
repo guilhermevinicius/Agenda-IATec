@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+WLDbFShHU+MmhaZLRFE4rk/SScUPffT72dDHPMh9SU5YjYXBdy2lN0+vkaff9Wnw/r7RKzUbdyqyXfWyvsCEg==",
+  "success": true,
+  "projectFilePath": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Shared/Agenda.Shared.csproj",
+  "expectedPackageFiles": [
+    "/Users/guilherme.mendonca/.nuget/packages/flunt/2.0.5/flunt.2.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

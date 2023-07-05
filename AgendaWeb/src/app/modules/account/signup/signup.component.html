@@ -1,0 +1,29 @@
+<div class="w-full h-full bg-[#f6f6f6]">
+  <div class="w-[500px] m-auto bg-white p-8 rounded-md shadow-md">
+    <div class="text-center">
+      <span class="title mb-4 text-lg">Agenda</span>
+      <span class="title mb-4 block text-gray-500">Crie uma conta</span>
+    </div>
+    <form [formGroup]="signUpForm" (ngSubmit)="onSubmitForm()" class="mb-8">
+      <mat-form-field class="w-full">
+        <mat-label>Nome</mat-label>
+        <input formControlName="name" type="email" matInput>
+      </mat-form-field>
+
+      <mat-form-field class="w-full">
+        <mat-label>Email</mat-label>
+        <input formControlName="email" type="email" matInput>
+      </mat-form-field>
+
+      <mat-form-field class="w-full">
+        <mat-label>Senha</mat-label>
+        <input formControlName="password" type="password" matInput>
+      </mat-form-field>
+
+      <button class="w-full" [disabled]="!signUpForm.valid" mat-flat-button color="primary">Criar conta</button>
+    </form>
+    <div>
+      <a class="w-full" [routerLink]="['/signin']" mat-flat-button color="primary">Entrar</a>
+    </div>
+  </div>
+</div>

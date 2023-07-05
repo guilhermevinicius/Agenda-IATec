@@ -1,0 +1,114 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "Flunt/2.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Flunt.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Flunt.dll": {}
+        }
+      },
+      "Agenda.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Flunt": "2.0.5"
+        },
+        "compile": {
+          "bin/placeholder/Agenda.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Agenda.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Flunt/2.0.5": {
+      "sha512": "CMgq8FUYjkHzyZT3PhkUwZyy79mudON+EL4b0SAT7BfIOJ2CNypwnbdA0cPHAM2CYQfO2L8ubNJCiBHQOIv2pA==",
+      "type": "package",
+      "path": "flunt/2.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flunt.2.0.5.nupkg.sha512",
+        "flunt.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/Flunt.dll"
+      ]
+    },
+    "Agenda.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Agenda.Shared/Agenda.Shared.csproj",
+      "msbuildProject": "../Agenda.Shared/Agenda.Shared.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "Agenda.Shared >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/guilherme.mendonca/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Domain/Agenda.Domain.csproj",
+      "projectName": "Agenda.Domain",
+      "projectPath": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Domain/Agenda.Domain.csproj",
+      "packagesPath": "/Users/guilherme.mendonca/.nuget/packages/",
+      "outputPath": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Domain/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/guilherme.mendonca/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Shared/Agenda.Shared.csproj": {
+              "projectPath": "/Users/guilherme.mendonca/RiderProjects/ProjetoAgenda/Agenda/Agenda.Shared/Agenda.Shared.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

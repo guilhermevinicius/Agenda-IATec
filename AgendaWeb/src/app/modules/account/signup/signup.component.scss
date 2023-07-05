@@ -1,0 +1,32 @@
+.container_sigup {
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .title {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+
+  form {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 32px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button {
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,69 @@
+<app-navbar />
+<div class="h-[100%] m-auto flex flex-row bg-[#f6f6f6] gap-4 p-8">
+
+  <div class="flex-1 bg-white rounded-md shadow-sm p-4">
+    <div class="flex flex-row items-center justify-between">
+      <span>Meu eventos</span>
+
+      <form [formGroup]="searchForm" (ngSubmit)="searchEvents()" class="flex flex-row items-center gap-4">
+        <mat-form-field>
+          <mat-label>Descrição</mat-label>
+          <input formControlName="q" type="text" matInput>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Data</mat-label>
+          <input formControlName="date" matInput [matDatepicker]="picker">
+          <mat-hint>MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <button mat-flat-button color="primary">Buscar</button>
+      </form>
+    </div>
+    <div class="grid grid-cols-1 gap-1">
+      <div *ngFor="let event of events">
+        <app-event-item [event]="event"></app-event-item>
+      </div>
+    </div>
+  </div>
+  <div class="w-[450px] h-[100%] flex flex-col gap-4">
+    <div class="flex-1 bg-white rounded-md shadow-sm p-4">
+      <span>Eventos compartilhados</span>
+
+      <div *ngFor="let eventShared of eventsShared">
+        <div>
+          <div class="flex flex-row bg-gray-100 mt-4 p-2 rounded-md">
+            <div class="flex-1">
+              <span class="block">{{ eventShared.name }}</span>
+              <span>{{ eventShared.description }}</span>
+            </div>
+            <div class="flex flex-col">
+              <span>{{ eventShared.date | date: 'dd/MM/YYYY' }}</span>
+              <button class="text-indigo-500" (click)="addEventMyEvents(eventShared.id)">Adicionar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="flex-1 bg-white rounded-md shadow-sm p-4">
+      <span>Eventos compartilhados com você</span>
+      <div *ngFor="let event of eventsNotAccepted">
+        <div>
+          <div class="flex flex-row bg-gray-100 mt-4 p-2 rounded-md">
+            <div class="flex-1">
+              <span class="block">{{ event.name }}</span>
+              <span>{{ event.description }}</span>
+            </div>
+            <div class="flex flex-col">
+              <span>{{ event.date | date: 'dd/MM/YYYY' }}</span>
+              <button class="text-indigo-500" (click)="acceptedEvent(event.eventUserId)">Adicionar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
